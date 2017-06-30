@@ -1,0 +1,1972 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>系统权限处理流程</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/系统权限处理流程/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/ie.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="files/系统权限处理流程/data.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (组合) -->
+      <div id="u9958" class="ax_default">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9959" class="ax_default box_1">
+          <div id="u9959_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u9960" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9961" class="ax_default label">
+          <div id="u9961_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u9962" class="text" style="visibility: visible;">
+            <p><span>启动 - 检测 - 权限 流程 / Product Requirement Document</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9963" class="ax_default label">
+          <div id="u9963_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u9964" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u9965" class="ax_default">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9966" class="ax_default box_1">
+          <div id="u9966_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u9967" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u9968" class="ax_default paragraph">
+          <img id="u9968_img" class="img " src="images/系统权限处理流程/u9968.png"/>
+          <!-- Unnamed () -->
+          <div id="u9969" class="text" style="visibility: visible;">
+            <p><span>Create by Skyfire At Beijing,P.R.China</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u9970" class="ax_default paragraph">
+          <img id="u9970_img" class="img " src="images/系统权限处理流程/u9968.png"/>
+          <!-- Unnamed () -->
+          <div id="u9971" class="text" style="visibility: visible;">
+            <p><span>Compiled in 2016-07-19 17:21:47</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9972" class="ax_default heading_3">
+          <div id="u9972_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u9973" class="text" style="visibility: visible;">
+            <p><span>简约 · 极致 · 传承</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u9974" class="ax_default paragraph">
+        <img id="u9974_img" class="img " src="images/页面加载/u8415.png"/>
+        <!-- Unnamed () -->
+        <div id="u9975" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u9976" class="ax_default box_2">
+        <div id="u9976_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u9977" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u9978" class="ax_default">
+
+        <!-- Unnamed (组合) -->
+        <div id="u9979" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u9980" class="ax_default box_1">
+            <div id="u9980_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u9981" class="text" style="visibility: visible;">
+              <p><span style="font-family:'ArialMT', 'Arial';">&quot;APP</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">名称</span><span style="font-family:'ArialMT', 'Arial';">&quot;</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">想访问您的麦克风</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u9982" class="ax_default box_1">
+            <div id="u9982_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u9983" class="text" style="visibility: visible;">
+              <p><span>不允许</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u9984" class="ax_default box_1">
+            <div id="u9984_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u9985" class="text" style="visibility: visible;">
+              <p><span>好</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u9986" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u9987" class="ax_default box_1">
+            <div id="u9987_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u9988" class="text" style="visibility: visible;">
+              <p><span style="font-family:'ArialMT', 'Arial';">&quot;APP</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">名称</span><span style="font-family:'ArialMT', 'Arial';">&quot;</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">想访问您的相机</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u9989" class="ax_default box_1">
+            <div id="u9989_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u9990" class="text" style="visibility: visible;">
+              <p><span>不允许</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u9991" class="ax_default box_1">
+            <div id="u9991_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u9992" class="text" style="visibility: visible;">
+              <p><span>好</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u9993" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u9994" class="ax_default box_1">
+            <div id="u9994_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u9995" class="text" style="visibility: visible;">
+              <p style="font-size:16px;"><span>允许&quot;APP名称&quot;在您使用该应用时访问您的位置吗？</span></p><p style="font-size:16px;"><span><br></span></p><p style="font-size:14px;"><span>请选择&quot;允许&quot;以便定位到您的位置</span></p><p style="font-size:16px;"><span><br></span></p><p style="font-size:16px;"><span><br></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u9996" class="ax_default box_1">
+            <div id="u9996_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u9997" class="text" style="visibility: visible;">
+              <p><span>不允许</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u9998" class="ax_default box_1">
+            <div id="u9998_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u9999" class="text" style="visibility: visible;">
+              <p><span>允许</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u10000" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10001" class="ax_default box_1">
+            <div id="u10001_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10002" class="text" style="visibility: visible;">
+              <p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';">提示</span></p><p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';"><br></span></p><p style="font-size:14px;"><span style="font-family:'ArialMT', 'Arial';">APP名称没有授权访问您的相机，您可以打开系统&quot;设置&gt;隐私&gt;相机&quot;，允许APP名称访问您的相机。</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10003" class="ax_default box_1">
+            <div id="u10003_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10004" class="text" style="visibility: visible;">
+              <p><span>取消</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10005" class="ax_default box_1">
+            <div id="u10005_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10006" class="text" style="visibility: visible;">
+              <p><span>设置</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u10007" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10008" class="ax_default box_1">
+            <div id="u10008_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10009" class="text" style="visibility: visible;">
+              <p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';">麦克风被禁用</span></p><p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';"><br></span></p><p style="font-size:14px;"><span style="font-family:'ArialMT', 'Arial';">请在iPhone的&quot;设置-隐私-麦克风&quot;中允许APP名称访问你的麦克风。</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10010" class="ax_default box_1">
+            <div id="u10010_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10011" class="text" style="visibility: visible;">
+              <p><span>确定</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u10012" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10013" class="ax_default box_1">
+            <div id="u10013_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10014" class="text" style="visibility: visible;">
+              <p style="font-size:16px;"><span>定位失败</span></p><p style="font-size:16px;"><span><br></span></p><p style="font-size:16px;"><span style="font-size:14px;">请在手机设置中开启定位服务(设置&gt;隐私&gt;定位服务&gt;开启)，才能正常使用本功能。</span><span></span></p><p style="font-size:16px;"><span><br></span></p><p style="font-size:16px;"><span><br></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10015" class="ax_default box_1">
+            <div id="u10015_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10016" class="text" style="visibility: visible;">
+              <p><span>开启定位</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10017" class="ax_default box_1">
+            <div id="u10017_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10018" class="text" style="visibility: visible;">
+              <p><span>跳过</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u10019" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10020" class="ax_default box_1">
+            <div id="u10020_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10021" class="text" style="visibility: visible;">
+              <p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';">&quot;APP</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">名称</span><span style="font-family:'ArialMT', 'Arial';">&quot;</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">想访问您的通讯录</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-size:14px;">APP名称将帮助你找到手机通讯录中已使用APP名称的朋友以便你们联系。</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10022" class="ax_default box_1">
+            <div id="u10022_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10023" class="text" style="visibility: visible;">
+              <p><span>不允许</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10024" class="ax_default box_1">
+            <div id="u10024_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10025" class="text" style="visibility: visible;">
+              <p><span>好</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u10026" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10027" class="ax_default box_1">
+            <div id="u10027_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10028" class="text" style="visibility: visible;">
+              <p style="font-size:16px;"><span>允许&quot;APP名称&quot;使用数据？</span></p><p style="font-size:16px;"><span><br></span></p><p style="font-size:14px;"><span>可能同时包含无线局域网和蜂窝移动数据。</span></p><p style="font-size:14px;"><span><br></span></p><p style="font-size:14px;"><span><br></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10029" class="ax_default box_1">
+            <div id="u10029_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10030" class="text" style="visibility: visible;">
+              <p><span>不允许</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10031" class="ax_default box_1">
+            <div id="u10031_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10032" class="text" style="visibility: visible;">
+              <p><span>允许</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u10033" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10034" class="ax_default box_1">
+            <div id="u10034_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10035" class="text" style="visibility: visible;">
+              <p style="font-size:16px;"><span>&quot;APP名称&quot;想给你发送通知</span></p><p style="font-size:16px;"><span><br></span></p><p style="font-size:16px;"><span style="font-size:14px;">&quot;通知&quot;可能包括提醒、声音和图标标记。这些可在&quot;设置&quot;中配置。</span><span></span></p><p style="font-size:16px;"><span><br></span></p><p style="font-size:16px;"><span><br></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10036" class="ax_default box_1">
+            <div id="u10036_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10037" class="text" style="visibility: visible;">
+              <p><span>不允许</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10038" class="ax_default box_1">
+            <div id="u10038_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10039" class="text" style="visibility: visible;">
+              <p><span>允许</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u10040" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10041" class="ax_default box_1">
+            <div id="u10041_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10042" class="text" style="visibility: visible;">
+              <p><span style="font-family:'ArialMT', 'Arial';">&quot;APP</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">名称</span><span style="font-family:'ArialMT', 'Arial';">&quot;</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">想访问您的照片</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10043" class="ax_default box_1">
+            <div id="u10043_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10044" class="text" style="visibility: visible;">
+              <p><span>不允许</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10045" class="ax_default box_1">
+            <div id="u10045_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10046" class="text" style="visibility: visible;">
+              <p><span>好</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u10047" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10048" class="ax_default box_1">
+            <div id="u10048_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10049" class="text" style="visibility: visible;">
+              <p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';">提示</span></p><p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';"><br></span></p><p style="font-size:14px;"><span style="font-family:'ArialMT', 'Arial';">APP名称没有授权访问您的照片，您可以打开系统&quot;设置&gt;隐私&gt;照片&quot;，允许APP名称访问您的照片。</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10050" class="ax_default box_1">
+            <div id="u10050_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10051" class="text" style="visibility: visible;">
+              <p><span>取消</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10052" class="ax_default box_1">
+            <div id="u10052_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10053" class="text" style="visibility: visible;">
+              <p><span>设置</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u10054" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10055" class="ax_default box_1">
+            <div id="u10055_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10056" class="text" style="visibility: visible;">
+              <p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';">提示</span></p><p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';"><br></span></p><p style="font-size:14px;"><span style="font-family:'ArialMT', 'Arial';">APP名称没有授权访问您的照片，您可以打开系统&quot;设置&gt;隐私&gt;通讯录&quot;，允许APP名称访问您的通讯录。</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10057" class="ax_default box_1">
+            <div id="u10057_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10058" class="text" style="visibility: visible;">
+              <p><span>取消</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u10059" class="ax_default box_1">
+            <div id="u10059_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u10060" class="text" style="visibility: visible;">
+              <p><span>设置</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u10061" class="ax_default paragraph">
+          <img id="u10061_img" class="img " src="images/系统权限处理/u9932.png"/>
+          <!-- Unnamed () -->
+          <div id="u10062" class="text" style="visibility: visible;">
+            <p><span>A，使用网络数据权限（IOS10+）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u10063" class="ax_default paragraph">
+          <img id="u10063_img" class="img " src="images/系统权限处理/u9934.png"/>
+          <!-- Unnamed () -->
+          <div id="u10064" class="text" style="visibility: visible;">
+            <p><span>B，使用系统推送通知权限</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u10065" class="ax_default paragraph">
+          <img id="u10065_img" class="img " src="images/系统权限处理/u9936.png"/>
+          <!-- Unnamed () -->
+          <div id="u10066" class="text" style="visibility: visible;">
+            <p><span>C，使用麦克风权限</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u10067" class="ax_default paragraph">
+          <img id="u10067_img" class="img " src="images/系统权限处理/u9938.png"/>
+          <!-- Unnamed () -->
+          <div id="u10068" class="text" style="visibility: visible;">
+            <p><span>无麦克风权限处理</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u10069" class="ax_default paragraph">
+          <img id="u10069_img" class="img " src="images/系统权限处理/u9940.png"/>
+          <!-- Unnamed () -->
+          <div id="u10070" class="text" style="visibility: visible;">
+            <p><span>D，使用相机权限</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u10071" class="ax_default paragraph">
+          <img id="u10071_img" class="img " src="images/系统权限处理/u9942.png"/>
+          <!-- Unnamed () -->
+          <div id="u10072" class="text" style="visibility: visible;">
+            <p><span>无相机权限处理</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u10073" class="ax_default paragraph">
+          <img id="u10073_img" class="img " src="images/系统权限处理/u9944.png"/>
+          <!-- Unnamed () -->
+          <div id="u10074" class="text" style="visibility: visible;">
+            <p><span>E，使用照片权限</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u10075" class="ax_default paragraph">
+          <img id="u10075_img" class="img " src="images/系统权限处理/u9942.png"/>
+          <!-- Unnamed () -->
+          <div id="u10076" class="text" style="visibility: visible;">
+            <p><span>无照片权限处理</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u10077" class="ax_default paragraph">
+          <img id="u10077_img" class="img " src="images/系统权限处理/u9948.png"/>
+          <!-- Unnamed () -->
+          <div id="u10078" class="text" style="visibility: visible;">
+            <p><span>F，使用定位权限</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u10079" class="ax_default paragraph">
+          <img id="u10079_img" class="img " src="images/系统权限处理/u9942.png"/>
+          <!-- Unnamed () -->
+          <div id="u10080" class="text" style="visibility: visible;">
+            <p><span>无定位权限处理</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u10081" class="ax_default paragraph">
+          <img id="u10081_img" class="img " src="images/系统权限处理/u9936.png"/>
+          <!-- Unnamed () -->
+          <div id="u10082" class="text" style="visibility: visible;">
+            <p><span>G，使用通讯录权限</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u10083" class="ax_default paragraph">
+          <img id="u10083_img" class="img " src="images/系统权限处理/u9938.png"/>
+          <!-- Unnamed () -->
+          <div id="u10084" class="text" style="visibility: visible;">
+            <p><span>无通讯录权限处理</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u10085" class="ax_default paragraph">
+        <img id="u10085_img" class="img " src="images/系统权限处理/u9956.png"/>
+        <!-- Unnamed () -->
+        <div id="u10086" class="text" style="visibility: visible;">
+          <p><span>点击&quot;开启定位&quot;，跳转到iOS系统中该功能对应设置页面。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10087" class="ax_default heading_3">
+        <div id="u10087_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10088" class="text" style="visibility: visible;">
+          <p><span>iOS系统通用权限处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10089" class="ax_default box_2">
+        <div id="u10089_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10090" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10091" class="ax_default flow_shape">
+        <div id="u10091_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10092" class="text" style="visibility: visible;">
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">打开</span><span style="font-family:'ArialMT', 'Arial';">APP</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10093" class="ax_default heading_3">
+        <div id="u10093_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10094" class="text" style="visibility: visible;">
+          <p><span>系统权限处理流程</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u10095" class="ax_default paragraph">
+        <img id="u10095_img" class="img " src="images/系统权限处理流程/u10095.png"/>
+        <!-- Unnamed () -->
+        <div id="u10096" class="text" style="visibility: visible;">
+          <p><span>说明：流程图是以iOS为主，Android在安装的时候就会提醒获取所有的授权，否则无法安装成功并使用。(最新版本支持只开启部分授权也可安装)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u10097" class="ax_default flow_shape">
+        <img id="u10097_img" class="img " src="images/产品架构/u6825.png"/>
+        <!-- Unnamed () -->
+        <div id="u10098" class="text" style="visibility: visible;">
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">是否</span><span style="font-family:'ArialMT', 'Arial';"></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">第一次</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10099" class="ax_default _连接线">
+        <img id="u10099_seg0" class="img " src="images/系统权限处理流程/u10099_seg0.png" alt="u10099_seg0"/>
+        <img id="u10099_seg1" class="img " src="images/内容加载机制/u8260_seg1.png" alt="u10099_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u10100" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10101" class="ax_default flow_shape">
+        <div id="u10101_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10102" class="text" style="visibility: visible;">
+          <p><span>故事版</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10103" class="ax_default _连接线">
+        <img id="u10103_seg0" class="img " src="images/系统权限处理流程/u10103_seg0.png" alt="u10103_seg0"/>
+        <img id="u10103_seg1" class="img " src="images/内容加载机制/u8260_seg1.png" alt="u10103_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u10104" class="text" style="visibility: visible;">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10105" class="ax_default flow_shape">
+        <div id="u10105_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10106" class="text" style="visibility: visible;">
+          <p><span>在无网络数据权限前，显示toast&quot;获取数据失败&quot;</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10107" class="ax_default _连接线">
+        <img id="u10107_seg0" class="img " src="images/系统权限处理流程/u10107_seg0.png" alt="u10107_seg0"/>
+        <img id="u10107_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10107_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u10108" class="text" style="visibility: visible;">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u10109" class="ax_default">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10110" class="ax_default flow_shape">
+          <div id="u10110_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10111" class="text" style="visibility: visible;">
+            <p><span>申请授权</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (菱形) -->
+        <div id="u10112" class="ax_default flow_shape">
+          <img id="u10112_img" class="img " src="images/产品架构/u6825.png"/>
+          <!-- Unnamed () -->
+          <div id="u10113" class="text" style="visibility: visible;">
+            <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">是否</span><span style="font-family:'ArialMT', 'Arial';"></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">同意授权</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10114" class="ax_default _连接线">
+          <img id="u10114_seg0" class="img " src="images/系统权限处理流程/u10114_seg0.png" alt="u10114_seg0"/>
+          <img id="u10114_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10114_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10115" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10116" class="ax_default flow_shape">
+          <div id="u10116_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10117" class="text" style="visibility: visible;">
+            <p><span>下次用户使用某功能需要调用该授权，警告框提醒开启</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10118" class="ax_default flow_shape">
+          <div id="u10118_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10119" class="text" style="visibility: visible;">
+            <p><span>已授权</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10120" class="ax_default _连接线">
+          <img id="u10120_seg0" class="img " src="images/系统权限处理流程/u10107_seg0.png" alt="u10120_seg0"/>
+          <img id="u10120_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10120_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10121" class="text" style="visibility: visible;">
+            <p><span>否</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10122" class="ax_default _连接线">
+          <img id="u10122_seg0" class="img " src="images/系统权限处理流程/u10122_seg0.png" alt="u10122_seg0"/>
+          <img id="u10122_seg1" class="img " src="images/内容加载机制/u8260_seg1.png" alt="u10122_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10123" class="text" style="visibility: visible;">
+            <p><span>是</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u10124" class="ax_default">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10125" class="ax_default flow_shape">
+          <div id="u10125_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10126" class="text" style="visibility: visible;">
+            <p><span>第一次</span></p><p><span>打开首页</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10127" class="ax_default flow_shape">
+          <div id="u10127_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10128" class="text" style="visibility: visible;">
+            <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">首页</span><span style="font-family:'ArialMT', 'Arial';"></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">精选/社区</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10129" class="ax_default flow_shape">
+          <div id="u10129_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10130" class="text" style="visibility: visible;">
+            <p><span>发现</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10131" class="ax_default flow_shape">
+          <div id="u10131_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10132" class="text" style="visibility: visible;">
+            <p><span>直播</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10133" class="ax_default flow_shape">
+          <div id="u10133_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10134" class="text" style="visibility: visible;">
+            <p><span>我的</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10135" class="ax_default flow_shape">
+          <div id="u10135_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10136" class="text" style="visibility: visible;">
+            <p><span>K歌</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10137" class="ax_default _连接线">
+          <img id="u10137_seg0" class="img " src="images/系统权限处理流程/u10137_seg0.png" alt="u10137_seg0"/>
+          <!-- Unnamed () -->
+          <div id="u10138" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10139" class="ax_default _连接线">
+          <img id="u10139_seg0" class="img " src="images/系统权限处理流程/u10139_seg0.png" alt="u10139_seg0"/>
+          <!-- Unnamed () -->
+          <div id="u10140" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10141" class="ax_default _连接线">
+          <img id="u10141_seg0" class="img " src="images/系统权限处理流程/u10141_seg0.png" alt="u10141_seg0"/>
+          <!-- Unnamed () -->
+          <div id="u10142" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10143" class="ax_default _连接线">
+          <img id="u10143_seg0" class="img " src="images/系统权限处理流程/u10143_seg0.png" alt="u10143_seg0"/>
+          <!-- Unnamed () -->
+          <div id="u10144" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10145" class="ax_default flow_shape">
+          <div id="u10145_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10146" class="text" style="visibility: visible;">
+            <p><span>评论或分享</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10147" class="ax_default flow_shape">
+          <div id="u10147_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10148" class="text" style="visibility: visible;">
+            <p><span>录制演唱</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10149" class="ax_default flow_shape">
+          <div id="u10149_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10150" class="text" style="visibility: visible;">
+            <p><span>找和加好友</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10151" class="ax_default flow_shape">
+          <div id="u10151_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10152" class="text" style="visibility: visible;">
+            <p><span>开启/筛选</span></p><p><span>直播间</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10153" class="ax_default _连接线">
+          <img id="u10153_seg0" class="img " src="images/系统权限处理流程/u10153_seg0.png" alt="u10153_seg0"/>
+          <img id="u10153_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10153_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10154" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10155" class="ax_default _连接线">
+          <img id="u10155_seg0" class="img " src="images/系统权限处理流程/u10153_seg0.png" alt="u10155_seg0"/>
+          <img id="u10155_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10155_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10156" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10157" class="ax_default _连接线">
+          <img id="u10157_seg0" class="img " src="images/系统权限处理流程/u10153_seg0.png" alt="u10157_seg0"/>
+          <img id="u10157_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10157_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10158" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10159" class="ax_default _连接线">
+          <img id="u10159_seg0" class="img " src="images/系统权限处理流程/u10153_seg0.png" alt="u10159_seg0"/>
+          <img id="u10159_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10159_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10160" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10161" class="ax_default flow_shape">
+          <div id="u10161_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10162" class="text" style="visibility: visible;">
+            <p><span>修改或上传</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10163" class="ax_default _连接线">
+          <img id="u10163_seg0" class="img " src="images/系统权限处理流程/u10153_seg0.png" alt="u10163_seg0"/>
+          <img id="u10163_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10163_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10164" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10165" class="ax_default _连接线">
+          <img id="u10165_seg0" class="img " src="images/系统权限处理流程/u10165_seg0.png" alt="u10165_seg0"/>
+          <!-- Unnamed () -->
+          <div id="u10166" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10167" class="ax_default flow_shape">
+          <div id="u10167_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10168" class="text" style="visibility: visible;">
+            <p><span>修改头像</span></p><p><span>添加相册</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10169" class="ax_default flow_shape">
+          <div id="u10169_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10170" class="text" style="visibility: visible;">
+            <p><span>相机拍照</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10171" class="ax_default flow_shape">
+          <div id="u10171_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10172" class="text" style="visibility: visible;">
+            <p><span>从相册上传</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10173" class="ax_default _连接线">
+          <img id="u10173_seg0" class="img " src="images/系统权限处理流程/u10173_seg0.png" alt="u10173_seg0"/>
+          <img id="u10173_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10173_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10174" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10175" class="ax_default _连接线">
+          <img id="u10175_seg0" class="img " src="images/内容加载机制/u8288_seg0.png" alt="u10175_seg0"/>
+          <img id="u10175_seg1" class="img " src="images/系统权限处理流程/u10175_seg1.png" alt="u10175_seg1"/>
+          <img id="u10175_seg2" class="img " src="images/系统权限处理流程/u10175_seg2.png" alt="u10175_seg2"/>
+          <img id="u10175_seg3" class="img " src="images/系统权限处理流程/u10175_seg3.png" alt="u10175_seg3"/>
+          <!-- Unnamed () -->
+          <div id="u10176" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10177" class="ax_default flow_shape">
+          <div id="u10177_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10178" class="text" style="visibility: visible;">
+            <p><span>相机拍照</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10179" class="ax_default flow_shape">
+          <div id="u10179_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10180" class="text" style="visibility: visible;">
+            <p><span>从相册上传</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10181" class="ax_default flow_shape">
+          <div id="u10181_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10182" class="text" style="visibility: visible;">
+            <p><span>添加直播封面</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10183" class="ax_default flow_shape">
+          <div id="u10183_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10184" class="text" style="visibility: visible;">
+            <p><span>视频直播</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10185" class="ax_default flow_shape">
+          <div id="u10185_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10186" class="text" style="visibility: visible;">
+            <p><span>音频直播</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10187" class="ax_default flow_shape">
+          <div id="u10187_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10188" class="text" style="visibility: visible;">
+            <p><span>添加位置</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10189" class="ax_default flow_shape">
+          <div id="u10189_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10190" class="text" style="visibility: visible;">
+            <p><span>找好友</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10191" class="ax_default flow_shape">
+          <div id="u10191_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10192" class="text" style="visibility: visible;">
+            <p><span>加好友</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10193" class="ax_default flow_shape">
+          <div id="u10193_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10194" class="text" style="visibility: visible;">
+            <p><span>使用定位</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10195" class="ax_default flow_shape">
+          <div id="u10195_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10196" class="text" style="visibility: visible;">
+            <p><span>使用通讯录</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10197" class="ax_default flow_shape">
+          <div id="u10197_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10198" class="text" style="visibility: visible;">
+            <p><span>使用摄像头</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10199" class="ax_default flow_shape">
+          <div id="u10199_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10200" class="text" style="visibility: visible;">
+            <p><span>使用麦克风</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10201" class="ax_default flow_shape">
+          <div id="u10201_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10202" class="text" style="visibility: visible;">
+            <p><span>使用定位</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10203" class="ax_default flow_shape">
+          <div id="u10203_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10204" class="text" style="visibility: visible;">
+            <p><span>使用社交网络</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10205" class="ax_default flow_shape">
+          <div id="u10205_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10206" class="text" style="visibility: visible;">
+            <p><span>相机拍照</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10207" class="ax_default flow_shape">
+          <div id="u10207_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10208" class="text" style="visibility: visible;">
+            <p><span>从相册上传</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10209" class="ax_default flow_shape">
+          <div id="u10209_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10210" class="text" style="visibility: visible;">
+            <p><span>添加直播封面</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10211" class="ax_default flow_shape">
+          <div id="u10211_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10212" class="text" style="visibility: visible;">
+            <p><span>视频直播</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10213" class="ax_default flow_shape">
+          <div id="u10213_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10214" class="text" style="visibility: visible;">
+            <p><span>音频直播</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10215" class="ax_default flow_shape">
+          <div id="u10215_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10216" class="text" style="visibility: visible;">
+            <p><span>使用摄像头</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10217" class="ax_default flow_shape">
+          <div id="u10217_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10218" class="text" style="visibility: visible;">
+            <p><span>使用麦克风</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10219" class="ax_default flow_shape">
+          <div id="u10219_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10220" class="text" style="visibility: visible;">
+            <p><span>相机拍照</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10221" class="ax_default flow_shape">
+          <div id="u10221_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10222" class="text" style="visibility: visible;">
+            <p><span>从相册上传</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10223" class="ax_default flow_shape">
+          <div id="u10223_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10224" class="text" style="visibility: visible;">
+            <p><span>发送图片</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10225" class="ax_default flow_shape">
+          <div id="u10225_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10226" class="text" style="visibility: visible;">
+            <p><span>发送语音</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10227" class="ax_default flow_shape">
+          <div id="u10227_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10228" class="text" style="visibility: visible;">
+            <p><span>使用麦克风</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10229" class="ax_default _连接线">
+          <img id="u10229_seg0" class="img " src="images/系统权限处理流程/u10173_seg0.png" alt="u10229_seg0"/>
+          <img id="u10229_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10229_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10230" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10231" class="ax_default _连接线">
+          <img id="u10231_seg0" class="img " src="images/系统权限处理流程/u10173_seg0.png" alt="u10231_seg0"/>
+          <img id="u10231_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10231_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10232" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10233" class="ax_default _连接线">
+          <img id="u10233_seg0" class="img " src="images/系统权限处理流程/u10173_seg0.png" alt="u10233_seg0"/>
+          <img id="u10233_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10233_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10234" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10235" class="ax_default _连接线">
+          <img id="u10235_seg0" class="img " src="images/系统权限处理流程/u10173_seg0.png" alt="u10235_seg0"/>
+          <img id="u10235_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10235_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10236" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10237" class="ax_default _连接线">
+          <img id="u10237_seg0" class="img " src="images/系统权限处理流程/u10237_seg0.png" alt="u10237_seg0"/>
+          <img id="u10237_seg1" class="img " src="images/系统权限处理流程/u10237_seg1.png" alt="u10237_seg1"/>
+          <img id="u10237_seg2" class="img " src="images/系统权限处理流程/u10237_seg2.png" alt="u10237_seg2"/>
+          <img id="u10237_seg3" class="img " src="images/系统权限处理流程/u10237_seg3.png" alt="u10237_seg3"/>
+          <!-- Unnamed () -->
+          <div id="u10238" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10239" class="ax_default _连接线">
+          <img id="u10239_seg0" class="img " src="images/内容加载机制/u8338_seg0.png" alt="u10239_seg0"/>
+          <img id="u10239_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10239_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10240" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10241" class="ax_default _连接线">
+          <img id="u10241_seg0" class="img " src="images/系统权限处理流程/u10237_seg0.png" alt="u10241_seg0"/>
+          <img id="u10241_seg1" class="img " src="images/系统权限处理流程/u10237_seg1.png" alt="u10241_seg1"/>
+          <img id="u10241_seg2" class="img " src="images/系统权限处理流程/u10237_seg2.png" alt="u10241_seg2"/>
+          <img id="u10241_seg3" class="img " src="images/系统权限处理流程/u10237_seg3.png" alt="u10241_seg3"/>
+          <!-- Unnamed () -->
+          <div id="u10242" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10243" class="ax_default _连接线">
+          <img id="u10243_seg0" class="img " src="images/内容加载机制/u8338_seg0.png" alt="u10243_seg0"/>
+          <img id="u10243_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10243_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10244" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10245" class="ax_default _连接线">
+          <img id="u10245_seg0" class="img " src="images/内容加载机制/u8338_seg0.png" alt="u10245_seg0"/>
+          <img id="u10245_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10245_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10246" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10247" class="ax_default _连接线">
+          <img id="u10247_seg0" class="img " src="images/内容加载机制/u8338_seg0.png" alt="u10247_seg0"/>
+          <img id="u10247_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10247_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10248" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10249" class="ax_default _连接线">
+          <img id="u10249_seg0" class="img " src="images/系统权限处理流程/u10237_seg0.png" alt="u10249_seg0"/>
+          <img id="u10249_seg1" class="img " src="images/系统权限处理流程/u10249_seg1.png" alt="u10249_seg1"/>
+          <img id="u10249_seg2" class="img " src="images/系统权限处理流程/u10237_seg2.png" alt="u10249_seg2"/>
+          <img id="u10249_seg3" class="img " src="images/系统权限处理流程/u10237_seg3.png" alt="u10249_seg3"/>
+          <!-- Unnamed () -->
+          <div id="u10250" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10251" class="ax_default _连接线">
+          <img id="u10251_seg0" class="img " src="images/系统权限处理流程/u10237_seg0.png" alt="u10251_seg0"/>
+          <img id="u10251_seg1" class="img " src="images/系统权限处理流程/u10237_seg1.png" alt="u10251_seg1"/>
+          <img id="u10251_seg2" class="img " src="images/系统权限处理流程/u10237_seg2.png" alt="u10251_seg2"/>
+          <img id="u10251_seg3" class="img " src="images/系统权限处理流程/u10237_seg3.png" alt="u10251_seg3"/>
+          <!-- Unnamed () -->
+          <div id="u10252" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10253" class="ax_default _连接线">
+          <img id="u10253_seg0" class="img " src="images/内容加载机制/u8338_seg0.png" alt="u10253_seg0"/>
+          <img id="u10253_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10253_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10254" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10255" class="ax_default _连接线">
+          <img id="u10255_seg0" class="img " src="images/内容加载机制/u8338_seg0.png" alt="u10255_seg0"/>
+          <img id="u10255_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10255_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10256" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10257" class="ax_default _连接线">
+          <img id="u10257_seg0" class="img " src="images/内容加载机制/u8338_seg0.png" alt="u10257_seg0"/>
+          <img id="u10257_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10257_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10258" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10259" class="ax_default flow_shape">
+          <div id="u10259_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10260" class="text" style="visibility: visible;">
+            <p><span>设置</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10261" class="ax_default flow_shape">
+          <div id="u10261_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10262" class="text" style="visibility: visible;">
+            <p><span>推送消息设置</span></p><p><span>检测是否开启</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10263" class="ax_default flow_shape">
+          <div id="u10263_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10264" class="text" style="visibility: visible;">
+            <p><span>打开消息推送</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u10265" class="ax_default flow_shape">
+          <div id="u10265_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u10266" class="text" style="visibility: visible;">
+            <p><span>使用推送通知</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10267" class="ax_default _连接线">
+          <img id="u10267_seg0" class="img " src="images/系统权限处理流程/u10267_seg0.png" alt="u10267_seg0"/>
+          <!-- Unnamed () -->
+          <div id="u10268" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10269" class="ax_default _连接线">
+          <img id="u10269_seg0" class="img " src="images/系统权限处理流程/u10153_seg0.png" alt="u10269_seg0"/>
+          <img id="u10269_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10269_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10270" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10271" class="ax_default _连接线">
+          <img id="u10271_seg0" class="img " src="images/系统权限处理流程/u10173_seg0.png" alt="u10271_seg0"/>
+          <img id="u10271_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10271_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10272" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u10273" class="ax_default _连接线">
+          <img id="u10273_seg0" class="img " src="images/内容加载机制/u8338_seg0.png" alt="u10273_seg0"/>
+          <img id="u10273_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10273_seg1"/>
+          <!-- Unnamed () -->
+          <div id="u10274" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10275" class="ax_default _连接线">
+        <img id="u10275_seg0" class="img " src="images/系统权限处理流程/u10275_seg0.png" alt="u10275_seg0"/>
+        <img id="u10275_seg1" class="img " src="images/内容加载机制/u8260_seg1.png" alt="u10275_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u10276" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10277" class="ax_default _连接线">
+        <img id="u10277_seg0" class="img " src="images/系统权限处理流程/u10277_seg0.png" alt="u10277_seg0"/>
+        <img id="u10277_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10277_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u10278" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10279" class="ax_default box_2">
+        <div id="u10279_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10280" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10281" class="ax_default box_2">
+        <div id="u10281_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10282" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u10283" class="ax_default flow_shape">
+        <img id="u10283_img" class="img " src="images/产品架构/u6825.png"/>
+        <!-- Unnamed () -->
+        <div id="u10284" class="text" style="visibility: visible;">
+          <p><span>判断</span></p><p><span>有无授权</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u10285" class="ax_default flow_shape">
+        <img id="u10285_img" class="img " src="images/产品架构/u6825.png"/>
+        <!-- Unnamed () -->
+        <div id="u10286" class="text" style="visibility: visible;">
+          <p><span>申请</span></p><p><span>推送授权</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10287" class="ax_default flow_shape">
+        <div id="u10287_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10288" class="text" style="visibility: visible;">
+          <p><span>正常操作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10289" class="ax_default flow_shape">
+        <div id="u10289_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10290" class="text" style="visibility: visible;">
+          <p><span>下次用户使用某功能需要调用该授权，警告框提醒开启</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10291" class="ax_default flow_shape">
+        <div id="u10291_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10292" class="text" style="visibility: visible;">
+          <p><span>正常操作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10293" class="ax_default flow_shape">
+        <div id="u10293_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10294" class="text" style="visibility: visible;">
+          <p><span>下次用户使用某功能需要调用该授权，警告框提醒开启</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10295" class="ax_default _连接线">
+        <img id="u10295_seg0" class="img " src="images/系统权限处理流程/u10295_seg0.png" alt="u10295_seg0"/>
+        <img id="u10295_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10295_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u10296" class="text" style="visibility: visible;">
+          <p><span>已申请，已授权</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10297" class="ax_default _连接线">
+        <img id="u10297_seg0" class="img " src="images/产品架构/u6939_seg0.png" alt="u10297_seg0"/>
+        <img id="u10297_seg1" class="img " src="images/系统权限处理流程/u10297_seg1.png" alt="u10297_seg1"/>
+        <img id="u10297_seg2" class="img " src="images/系统权限处理流程/u10297_seg2.png" alt="u10297_seg2"/>
+        <img id="u10297_seg3" class="img " src="images/产品架构/u6837_seg1.png" alt="u10297_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10298" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10299" class="ax_default _连接线">
+        <img id="u10299_seg0" class="img " src="images/产品架构/u6939_seg0.png" alt="u10299_seg0"/>
+        <img id="u10299_seg1" class="img " src="images/系统权限处理流程/u10299_seg1.png" alt="u10299_seg1"/>
+        <img id="u10299_seg2" class="img " src="images/系统权限处理流程/u10299_seg2.png" alt="u10299_seg2"/>
+        <img id="u10299_seg3" class="img " src="images/产品架构/u6837_seg1.png" alt="u10299_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10300" class="text" style="visibility: visible;">
+          <p><span>已申请，无授权</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10301" class="ax_default _连接线">
+        <img id="u10301_seg0" class="img " src="images/系统权限处理流程/u10301_seg0.png" alt="u10301_seg0"/>
+        <img id="u10301_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10301_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u10302" class="text" style="visibility: visible;">
+          <p><span>允许</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10303" class="ax_default _连接线">
+        <img id="u10303_seg0" class="img " src="images/系统权限处理流程/u10303_seg0.png" alt="u10303_seg0"/>
+        <img id="u10303_seg1" class="img " src="images/系统权限处理流程/u10303_seg1.png" alt="u10303_seg1"/>
+        <img id="u10303_seg2" class="img " src="images/产品架构/u6837_seg1.png" alt="u10303_seg2"/>
+        <!-- Unnamed () -->
+        <div id="u10304" class="text" style="visibility: visible;">
+          <p><span>不允许</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u10305" class="ax_default paragraph">
+        <img id="u10305_img" class="img " src="images/系统权限处理流程/u10305.png"/>
+        <!-- Unnamed () -->
+        <div id="u10306" class="text" style="visibility: visible;">
+          <p><span>未申请</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10307" class="ax_default heading_3">
+        <div id="u10307_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10308" class="text" style="visibility: visible;">
+          <p><span>提醒开启流程无中断</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10309" class="ax_default heading_3">
+        <div id="u10309_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10310" class="text" style="visibility: visible;">
+          <p><span>提醒开启流程并中断</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u10311" class="ax_default flow_shape">
+        <img id="u10311_img" class="img " src="images/产品架构/u6825.png"/>
+        <!-- Unnamed () -->
+        <div id="u10312" class="text" style="visibility: visible;">
+          <p><span>判断</span></p><p><span>有无授权</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u10313" class="ax_default flow_shape">
+        <img id="u10313_img" class="img " src="images/产品架构/u6825.png"/>
+        <!-- Unnamed () -->
+        <div id="u10314" class="text" style="visibility: visible;">
+          <p><span>申请</span></p><p><span>推送授权</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10315" class="ax_default flow_shape">
+        <div id="u10315_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10316" class="text" style="visibility: visible;">
+          <p><span>正常操作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10317" class="ax_default flow_shape">
+        <div id="u10317_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10318" class="text" style="visibility: visible;">
+          <p><span>下次用户使用某功能需要调用该授权，警告框提醒开启并中断</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10319" class="ax_default flow_shape">
+        <div id="u10319_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10320" class="text" style="visibility: visible;">
+          <p><span>正常操作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10321" class="ax_default flow_shape">
+        <div id="u10321_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u10322" class="text" style="visibility: visible;">
+          <p><span>下次用户使用某功能需要调用该授权，警告框提醒开启并中断</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10323" class="ax_default _连接线">
+        <img id="u10323_seg0" class="img " src="images/系统权限处理流程/u10295_seg0.png" alt="u10323_seg0"/>
+        <img id="u10323_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10323_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u10324" class="text" style="visibility: visible;">
+          <p><span>已申请，已授权</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10325" class="ax_default _连接线">
+        <img id="u10325_seg0" class="img " src="images/产品架构/u6939_seg0.png" alt="u10325_seg0"/>
+        <img id="u10325_seg1" class="img " src="images/系统权限处理流程/u10297_seg1.png" alt="u10325_seg1"/>
+        <img id="u10325_seg2" class="img " src="images/系统权限处理流程/u10297_seg2.png" alt="u10325_seg2"/>
+        <img id="u10325_seg3" class="img " src="images/产品架构/u6837_seg1.png" alt="u10325_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10326" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10327" class="ax_default _连接线">
+        <img id="u10327_seg0" class="img " src="images/产品架构/u6939_seg0.png" alt="u10327_seg0"/>
+        <img id="u10327_seg1" class="img " src="images/系统权限处理流程/u10299_seg1.png" alt="u10327_seg1"/>
+        <img id="u10327_seg2" class="img " src="images/系统权限处理流程/u10299_seg2.png" alt="u10327_seg2"/>
+        <img id="u10327_seg3" class="img " src="images/产品架构/u6837_seg1.png" alt="u10327_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10328" class="text" style="visibility: visible;">
+          <p><span>已申请，无授权</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10329" class="ax_default _连接线">
+        <img id="u10329_seg0" class="img " src="images/系统权限处理流程/u10301_seg0.png" alt="u10329_seg0"/>
+        <img id="u10329_seg1" class="img " src="images/产品架构/u6837_seg1.png" alt="u10329_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u10330" class="text" style="visibility: visible;">
+          <p><span>允许</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10331" class="ax_default _连接线">
+        <img id="u10331_seg0" class="img " src="images/系统权限处理流程/u10303_seg0.png" alt="u10331_seg0"/>
+        <img id="u10331_seg1" class="img " src="images/系统权限处理流程/u10303_seg1.png" alt="u10331_seg1"/>
+        <img id="u10331_seg2" class="img " src="images/产品架构/u6837_seg1.png" alt="u10331_seg2"/>
+        <!-- Unnamed () -->
+        <div id="u10332" class="text" style="visibility: visible;">
+          <p><span>不允许</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u10333" class="ax_default paragraph">
+        <img id="u10333_img" class="img " src="images/系统权限处理流程/u10305.png"/>
+        <!-- Unnamed () -->
+        <div id="u10334" class="text" style="visibility: visible;">
+          <p><span>未申请</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10335" class="ax_default _连接线">
+        <img id="u10335_seg0" class="img " src="images/系统权限处理流程/u10335_seg0.png" alt="u10335_seg0"/>
+        <img id="u10335_seg1" class="img " src="images/系统权限处理流程/u10335_seg1.png" alt="u10335_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u10336" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10337" class="ax_default _连接线">
+        <img id="u10337_seg0" class="img " src="images/系统权限处理流程/u10337_seg0.png" alt="u10337_seg0"/>
+        <img id="u10337_seg1" class="img " src="images/系统权限处理流程/u10337_seg1.png" alt="u10337_seg1"/>
+        <img id="u10337_seg2" class="img " src="images/系统权限处理流程/u10337_seg2.png" alt="u10337_seg2"/>
+        <img id="u10337_seg3" class="img " src="images/系统权限处理流程/u10335_seg1.png" alt="u10337_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10338" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10339" class="ax_default _连接线">
+        <img id="u10339_seg0" class="img " src="images/系统权限处理流程/u10339_seg0.png" alt="u10339_seg0"/>
+        <img id="u10339_seg1" class="img " src="images/系统权限处理流程/u10339_seg1.png" alt="u10339_seg1"/>
+        <img id="u10339_seg2" class="img " src="images/系统权限处理流程/u10339_seg2.png" alt="u10339_seg2"/>
+        <img id="u10339_seg3" class="img " src="images/系统权限处理流程/u10335_seg1.png" alt="u10339_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10340" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10341" class="ax_default _连接线">
+        <img id="u10341_seg0" class="img " src="images/系统权限处理流程/u10339_seg0.png" alt="u10341_seg0"/>
+        <img id="u10341_seg1" class="img " src="images/系统权限处理流程/u10341_seg1.png" alt="u10341_seg1"/>
+        <img id="u10341_seg2" class="img " src="images/系统权限处理流程/u10339_seg2.png" alt="u10341_seg2"/>
+        <img id="u10341_seg3" class="img " src="images/系统权限处理流程/u10335_seg1.png" alt="u10341_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10342" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10343" class="ax_default _连接线">
+        <img id="u10343_seg0" class="img " src="images/系统权限处理流程/u10339_seg0.png" alt="u10343_seg0"/>
+        <img id="u10343_seg1" class="img " src="images/系统权限处理流程/u10343_seg1.png" alt="u10343_seg1"/>
+        <img id="u10343_seg2" class="img " src="images/系统权限处理流程/u10339_seg2.png" alt="u10343_seg2"/>
+        <img id="u10343_seg3" class="img " src="images/系统权限处理流程/u10335_seg1.png" alt="u10343_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10344" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10345" class="ax_default _连接线">
+        <img id="u10345_seg0" class="img " src="images/系统权限处理流程/u10339_seg0.png" alt="u10345_seg0"/>
+        <img id="u10345_seg1" class="img " src="images/系统权限处理流程/u10345_seg1.png" alt="u10345_seg1"/>
+        <img id="u10345_seg2" class="img " src="images/系统权限处理流程/u10339_seg2.png" alt="u10345_seg2"/>
+        <img id="u10345_seg3" class="img " src="images/系统权限处理流程/u10335_seg1.png" alt="u10345_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10346" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10347" class="ax_default _连接线">
+        <img id="u10347_seg0" class="img " src="images/系统权限处理流程/u10339_seg0.png" alt="u10347_seg0"/>
+        <img id="u10347_seg1" class="img " src="images/系统权限处理流程/u10347_seg1.png" alt="u10347_seg1"/>
+        <img id="u10347_seg2" class="img " src="images/系统权限处理流程/u10339_seg2.png" alt="u10347_seg2"/>
+        <img id="u10347_seg3" class="img " src="images/系统权限处理流程/u10335_seg1.png" alt="u10347_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10348" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10349" class="ax_default _连接线">
+        <img id="u10349_seg0" class="img " src="images/系统权限处理流程/u10337_seg0.png" alt="u10349_seg0"/>
+        <img id="u10349_seg1" class="img " src="images/系统权限处理流程/u10349_seg1.png" alt="u10349_seg1"/>
+        <img id="u10349_seg2" class="img " src="images/系统权限处理流程/u10337_seg2.png" alt="u10349_seg2"/>
+        <img id="u10349_seg3" class="img " src="images/系统权限处理流程/u10335_seg1.png" alt="u10349_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10350" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10351" class="ax_default _连接线">
+        <img id="u10351_seg0" class="img " src="images/系统权限处理流程/u10351_seg0.png" alt="u10351_seg0"/>
+        <img id="u10351_seg1" class="img " src="images/系统权限处理流程/u10351_seg1.png" alt="u10351_seg1"/>
+        <img id="u10351_seg2" class="img " src="images/系统权限处理流程/u10351_seg2.png" alt="u10351_seg2"/>
+        <img id="u10351_seg3" class="img " src="images/系统权限处理流程/u10351_seg3.png" alt="u10351_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10352" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10353" class="ax_default _连接线">
+        <img id="u10353_seg0" class="img " src="images/系统权限处理流程/u10353_seg0.png" alt="u10353_seg0"/>
+        <img id="u10353_seg1" class="img " src="images/系统权限处理流程/u10353_seg1.png" alt="u10353_seg1"/>
+        <img id="u10353_seg2" class="img " src="images/系统权限处理流程/u10353_seg2.png" alt="u10353_seg2"/>
+        <img id="u10353_seg3" class="img " src="images/系统权限处理流程/u10351_seg3.png" alt="u10353_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10354" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10355" class="ax_default _连接线">
+        <img id="u10355_seg0" class="img " src="images/系统权限处理流程/u10353_seg0.png" alt="u10355_seg0"/>
+        <img id="u10355_seg1" class="img " src="images/系统权限处理流程/u10355_seg1.png" alt="u10355_seg1"/>
+        <img id="u10355_seg2" class="img " src="images/系统权限处理流程/u10353_seg2.png" alt="u10355_seg2"/>
+        <img id="u10355_seg3" class="img " src="images/系统权限处理流程/u10351_seg3.png" alt="u10355_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10356" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10357" class="ax_default _连接线">
+        <img id="u10357_seg0" class="img " src="images/系统权限处理流程/u10353_seg0.png" alt="u10357_seg0"/>
+        <img id="u10357_seg1" class="img " src="images/系统权限处理流程/u10357_seg1.png" alt="u10357_seg1"/>
+        <img id="u10357_seg2" class="img " src="images/系统权限处理流程/u10353_seg2.png" alt="u10357_seg2"/>
+        <img id="u10357_seg3" class="img " src="images/系统权限处理流程/u10351_seg3.png" alt="u10357_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10358" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10359" class="ax_default _连接线">
+        <img id="u10359_seg0" class="img " src="images/系统权限处理流程/u10353_seg0.png" alt="u10359_seg0"/>
+        <img id="u10359_seg1" class="img " src="images/系统权限处理流程/u10359_seg1.png" alt="u10359_seg1"/>
+        <img id="u10359_seg2" class="img " src="images/系统权限处理流程/u10353_seg2.png" alt="u10359_seg2"/>
+        <img id="u10359_seg3" class="img " src="images/系统权限处理流程/u10351_seg3.png" alt="u10359_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10360" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u10361" class="ax_default _连接线">
+        <img id="u10361_seg0" class="img " src="images/系统权限处理流程/u10353_seg0.png" alt="u10361_seg0"/>
+        <img id="u10361_seg1" class="img " src="images/系统权限处理流程/u10361_seg1.png" alt="u10361_seg1"/>
+        <img id="u10361_seg2" class="img " src="images/系统权限处理流程/u10353_seg2.png" alt="u10361_seg2"/>
+        <img id="u10361_seg3" class="img " src="images/系统权限处理流程/u10351_seg3.png" alt="u10361_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u10362" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
